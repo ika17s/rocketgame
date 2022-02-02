@@ -6,13 +6,13 @@ window.addEventListener("keydown", (e) => {
   if (e.key == "ArrowLeft" && left > 0) {
     jet.style.left = left - 10 + "px";
   }
-  //460  =>  board width - jet width
+
   else if (e.key == "ArrowRight" && left <= 1000) {
     jet.style.left = left + 10 + "px";
   };
   
   if (e.keyCode == 32) {
-    //32 is for space key
+
     var bullet = document.createElement("div");
     bullet.classList.add("bullets");
     board.appendChild(bullet);
@@ -26,8 +26,6 @@ window.addEventListener("keydown", (e) => {
           var rockbound = rock.getBoundingClientRect();
           var bulletbound = bullet.getBoundingClientRect();
 
-          //Condition to check whether the rock/alien and the bullet are at the same position..!
-          //If so,then we have to destroy that rock
 
           if (
             bulletbound.left >= rockbound.left &&
@@ -46,12 +44,11 @@ window.addEventListener("keydown", (e) => {
         window.getComputedStyle(bullet).getPropertyValue("bottom")
       );
 
-      //Stops the bullet from moving outside the gamebox
       if (bulletbottom >= 1000) {
         clearInterval(movebullet);
       }
 
-      bullet.style.left = left + "px"; //bullet should always be placed at the top of my jet..!
+      bullet.style.left = left + 33 + "px"; 
       bullet.style.bottom = bulletbottom + 3 + "px";
     });
   }
