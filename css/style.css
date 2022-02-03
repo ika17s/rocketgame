@@ -13,14 +13,14 @@ body {
       border-radius: 5px;
       background-color: black;
       overflow: hidden;
-      background: url("../field.jpg");
+      background: url("../spaceIN.jpg");
     }
 
     #jet {
       position: absolute;
       width: 80px;
       height: 80px;
-      background: url("../gp.png");
+      background: url("../rocket.png");
       background-size: contain;
       background-repeat: no-repeat;
       left: 50%;
@@ -31,9 +31,9 @@ body {
       position: absolute;
       bottom: 40px;
       left: 51%;
-      width: 30px;
-      height: 30px;
-      background: url("../rabbit.png");
+      width: 20px;
+      height: 20px;
+      background: url("../bullet.png");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -43,7 +43,7 @@ body {
       top: 0px;
       width: 70px;
       height: 70px;
-      background: url("../carrot.png");
+      background: url("../alien.png");
       background-size: contain;
       background-repeat: no-repeat;
     }
