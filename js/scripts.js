@@ -74,7 +74,7 @@ var moverocks = setInterval(() => {
       var rocktop = parseInt(
         window.getComputedStyle(rock).getPropertyValue("top")
       );
-      if (rocktop >= 650) {
+      if (rocktop >= 620) {
         alert("Game Over");
         clearInterval(moverocks);
         window.location.reload();
